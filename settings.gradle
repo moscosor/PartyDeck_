@@ -1,0 +1,2 @@
+rootProject.name = "PartyDeck"
+include ':app'
