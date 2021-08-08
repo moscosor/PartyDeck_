@@ -7,7 +7,7 @@
     tools:context=".LifeCounter_3Players">
 
     <TextView
-        android:id="@+id/p3__player1_life"
+        android:id="@+id/p3_player1_life"
         android:layout_width="241dp"
         android:layout_height="137dp"
         android:elevation="20dp"
@@ -21,7 +21,7 @@
         app:layout_constraintVertical_bias="0.792" />
 
     <TextView
-        android:id="@+id/p3__player2_life"
+        android:id="@+id/p4_player2_life"
         android:layout_width="84dp"
         android:layout_height="202dp"
         android:elevation="20dp"
@@ -40,7 +40,7 @@
         app:layout_constraintVertical_bias="0.162" />
 
     <TextView
-        android:id="@+id/p3__player3_life"
+        android:id="@+id/p4_player3_life"
         android:layout_width="84dp"
         android:layout_height="202dp"
         android:elevation="20dp"
@@ -57,7 +57,7 @@
         app:layout_constraintVertical_bias="0.162" />
 
     <Button
-        android:id="@+id/p3_player2_minus"
+        android:id="@+id/p4_player2_minus"
         android:layout_width="185dp"
         android:layout_height="170dp"
         android:layout_marginStart="16dp"
@@ -76,7 +76,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/p3_player3_plus"
+        android:id="@+id/p4_player3_plus"
         android:layout_width="185dp"
         android:layout_height="170dp"
         android:layout_marginStart="208dp"
@@ -96,7 +96,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/p3_player3_minus"
+        android:id="@+id/p4_player3_minus"
         android:layout_width="185dp"
         android:layout_height="170dp"
         android:layout_marginStart="208dp"
@@ -116,7 +116,7 @@
         app:layout_constraintVertical_bias="0.311" />
 
     <Button
-        android:id="@+id/p3_player2_plus"
+        android:id="@+id/p4_player2_plus"
         android:layout_width="185dp"
         android:layout_height="170dp"
         android:insetTop="0dp"
