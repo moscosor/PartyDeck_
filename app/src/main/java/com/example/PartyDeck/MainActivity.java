@@ -2,9 +2,13 @@ package com.example.PartyDeck;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.GridView;
 
 import java.util.ArrayList;
@@ -19,15 +23,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Bitmap defaultImage = BitmapFactory.decodeResource(getResources(), R.drawable.default_image);
-
         List<ListItem> list = new ArrayList<ListItem>();
 
         String[] buttonNames = {"Dice Rolling", "Coin Flipping", "Turn Picker", "Life Counter", "Timer", "Tournament Mode"};
 
         int[] images = {R.drawable.dice_img, R.drawable.coin_flip_img, R.drawable.turn_picker_img, R.drawable.life_counter_img, R.drawable.timer_img, R.drawable.bracket_img};
 
-        for(int i = 0; i < 6; i++){
+        for(int i = 0; i < buttonNames.length; i++){
             ListItem item = new ListItem();
             item.image = BitmapFactory.decodeResource(getResources(), images[i]);;
             item.name = buttonNames[i];
@@ -38,6 +40,42 @@ public class MainActivity extends AppCompatActivity {
 
         GridView gridView = (GridView)findViewById(R.id.gridViewId);
         gridView.setAdapter(adapter);
+
+        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+                Log.v("Test", "view: " + view);
+                Log.v("Test", "ID: " + l);
+                Log.v("Test", "Feature Name " + buttonNames[position]);
+                String name = buttonNames[position];
+
+                Intent intent;
+
+                switch (name){
+                    case "Dice Rolling":
+                        intent = new Intent(MainActivity.this, DiceRollingSetup.class);
+                        startActivity(intent);
+                        break;
+
+                    case "Coin Flipping":
+
+                        break;
+
+                    case "Turn Picker":
+
+                        break;
+
+                    case "Life Counter":
+                        intent = new Intent(MainActivity.this, LifeCounterSetup.class);
+                        startActivity(intent);
+                        break;
+
+                    case "Timer":
+
+                        break;
+                }
+            }
+        });
 
     }
 }

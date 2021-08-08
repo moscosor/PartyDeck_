@@ -11,7 +11,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Lab3Assignment6">
-        <activity android:name="com.example.PartyDeck.MainActivity">
+        <activity android:name=".DiceRollingSetup"></activity>
+        <activity android:name=".LifeCounter_4Players" />
+        <activity android:name=".LifeCounter_3Players" />
+        <activity android:name=".LifeCounter_2Players" />
+        <activity
+            android:name=".LifeCounterSetup"
+            android:label="@string/title_activity_life_counter_setup"
+            android:theme="@style/Theme.Lab3Assignment6.NoActionBar" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
