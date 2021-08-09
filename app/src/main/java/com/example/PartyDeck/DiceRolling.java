@@ -42,18 +42,18 @@ public class DiceRolling extends AppCompatActivity {
     }
 
     private void roll(int sides, int dice){
-        String output = "What you Rolled: ";
+        String output = "";
         int rolledResult;
         for (int i = 0; i < dice; i++) {
             rolledResult = getRandomInteger(1,sides);
-            output += rolledResult + " ";
+            output += rolledResult + "   ";
         }
 
         TextView outputText = (TextView) findViewById(R.id.diceRollResult);
         outputText.setText(output);
     }
 
-    private int getRandomInteger(int maximum, int minimum){
+    public static int getRandomInteger(int maximum, int minimum){
         return ((int) (Math.random()*(maximum - minimum))) + minimum;
     }
 }

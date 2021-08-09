@@ -9,7 +9,7 @@
     <TextView
         android:id="@+id/p4_player2_life"
         android:layout_width="84dp"
-        android:layout_height="202dp"
+        android:layout_height="242dp"
         android:elevation="20dp"
         android:gravity="center_horizontal"
         android:orientation="horizontal"
@@ -17,18 +17,18 @@
         android:rotationX="180"
         android:rotationY="180"
         android:textAlignment="center"
-        android:textSize="60sp"
+        android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.003"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.162" />
+        app:layout_constraintVertical_bias="0.126" />
 
     <TextView
         android:id="@+id/p4_player1_life"
         android:layout_width="84dp"
-        android:layout_height="202dp"
+        android:layout_height="242dp"
         android:elevation="20dp"
         android:gravity="center_horizontal"
         android:orientation="horizontal"
@@ -36,47 +36,47 @@
         android:rotationX="180"
         android:rotationY="180"
         android:textAlignment="center"
-        android:textSize="60sp"
+        android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.003"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.839" />
+        app:layout_constraintVertical_bias="0.873" />
 
     <TextView
         android:id="@+id/p4_player3_life"
         android:layout_width="84dp"
-        android:layout_height="202dp"
+        android:layout_height="242dp"
         android:elevation="20dp"
         android:gravity="center_horizontal"
         android:orientation="horizontal"
         android:rotation="-90"
         android:textAlignment="center"
-        android:textSize="60sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.996"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.162" />
-
-    <TextView
-        android:id="@+id/p4_player4_life"
-        android:layout_width="84dp"
-        android:layout_height="202dp"
-        android:elevation="20dp"
-        android:gravity="center_horizontal"
-        android:orientation="horizontal"
-        android:rotation="-90"
-        android:textAlignment="center"
-        android:textSize="60sp"
+        android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.839" />
+        app:layout_constraintVertical_bias="0.128" />
+
+    <TextView
+        android:id="@+id/p4_player4_life"
+        android:layout_width="84dp"
+        android:layout_height="242dp"
+        android:elevation="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:rotation="-90"
+        android:textAlignment="center"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.873" />
 
     <Button
         android:id="@+id/p4_player2_minus"

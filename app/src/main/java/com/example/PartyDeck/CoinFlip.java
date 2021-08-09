@@ -2,7 +2,13 @@ package com.example.PartyDeck;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
+import android.hardware.Sensor;
+import android.hardware.SensorEvent;
+import android.hardware.SensorEventListener;
+import android.hardware.SensorManager;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.AlphaAnimation;
@@ -29,20 +35,20 @@ public class CoinFlip extends AppCompatActivity {
         flip.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Log.v("CLICK", "YES");
                 flipCoin();
             }
         });
     }
 
-    private void flipCoin() {
+    public void flipCoin() {
         Animation fadeOut = new AlphaAnimation(1, 0);
         fadeOut.setInterpolator(new AccelerateInterpolator());
-        fadeOut.setDuration(1000);
+        fadeOut.setDuration(750);
         fadeOut.setFillAfter(true);
         fadeOut.setAnimationListener(new Animation.AnimationListener() {
             @Override
             public void onAnimationStart(Animation animation) {
-
             }
 
             @Override

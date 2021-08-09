@@ -2,7 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.PartyDeck">
 
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -11,7 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Lab3Assignment6">
-<<<<<<< HEAD
+
         <activity android:name=".RandomGenerator"></activity>
         <activity android:name=".DiceRollingSetup" />
         <activity android:name=".DiceRolling" />
@@ -19,11 +20,6 @@
         <activity android:name=".Timer" />
         <activity android:name=".TurnPicker" />
         <activity android:name=".CoinFlip" />
-=======
-        <activity android:name=".CoinFlip"></activity>
-        <activity android:name=".TurnPicker" />
-        <activity android:name=".DiceRollingSetup" />
->>>>>>> 7ac04bd07971c75c25415d49ed719e1b06c4f99d
         <activity android:name=".LifeCounter_4Players" />
         <activity android:name=".LifeCounter_3Players" />
         <activity android:name=".LifeCounter_2Players" />

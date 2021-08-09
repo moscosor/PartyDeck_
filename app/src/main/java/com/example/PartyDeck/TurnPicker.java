@@ -58,7 +58,7 @@ public class TurnPicker extends AppCompatActivity {
                 nameList.remove(choice);
                 String namesTogether = "";
                 for (int i = 0; i < nameList.size(); i++) {
-                    namesTogether = namesTogether + nameList.get(i) + " ";
+                    namesTogether = namesTogether + nameList.get(i) + "   ";
                 }
                 outputText.setText(namesTogether);
                 namePicked.setText(nameChosen);
