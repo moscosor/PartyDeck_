@@ -11,7 +11,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Lab3Assignment6">
-        <activity android:name=".DiceRollingSetup"></activity>
+        <activity android:name=".RandomGenerator"></activity>
+        <activity android:name=".DiceRollingSetup" />
+        <activity android:name=".DiceRolling" />
+        <activity android:name=".TimerSetup" />
+        <activity android:name=".Timer" />
+        <activity android:name=".TurnPicker" />
+        <activity android:name=".CoinFlip" />
         <activity android:name=".LifeCounter_4Players" />
         <activity android:name=".LifeCounter_3Players" />
         <activity android:name=".LifeCounter_2Players" />
