@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
         List<ListItem> list = new ArrayList<ListItem>();
 
-        String[] buttonNames = {"Dice Rolling a joint", "Coin Flipping", "Turn Picker", "Life Counter", "Timer", "Tournament Mode"};
+        String[] buttonNames = {"Dice Rolling", "Coin Flipping", "Turn Picker", "Life Counter", "Timer", "Tournament Mode"};
 
         int[] images = {R.drawable.dice_img, R.drawable.coin_flip_img, R.drawable.turn_picker_img, R.drawable.life_counter_img, R.drawable.timer_img, R.drawable.bracket_img};
 
@@ -58,11 +58,13 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
                     case "Coin Flipping":
-
+                        intent = new Intent(MainActivity.this, CoinFlip.class);
+                        startActivity(intent);
                         break;
 
                     case "Turn Picker":
-
+                        intent = new Intent(MainActivity.this, TurnPicker.class);
+                        startActivity(intent);
                         break;
 
                     case "Life Counter":
